@@ -1,3 +1,0 @@
-
-    export type RemoteKeys = 'REMOTE_ALIAS_IDENTIFIER/Header' | 'REMOTE_ALIAS_IDENTIFIER/EmailValidator' | 'REMOTE_ALIAS_IDENTIFIER/Utils';
-    type PackageType<T> = T extends 'REMOTE_ALIAS_IDENTIFIER/Utils' ? typeof import('REMOTE_ALIAS_IDENTIFIER/Utils') :T extends 'REMOTE_ALIAS_IDENTIFIER/EmailValidator' ? typeof import('REMOTE_ALIAS_IDENTIFIER/EmailValidator') :T extends 'REMOTE_ALIAS_IDENTIFIER/Header' ? typeof import('REMOTE_ALIAS_IDENTIFIER/Header') :any;
