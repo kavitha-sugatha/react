@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: "Inter", Avenir, Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Content */
+.remote1-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Header */
+.remote1-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Input Field */
+.remote1-content input {
+  width: 100%;
+  max-width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.remote1-content input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.remote1-content input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Email Validation Message */
+.remote1-content p {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Valid & Invalid Email Colors */
+.remote1-content p:nth-of-type(1) {
+  color: #f44336;
+}
+
+.remote1-content p:nth-of-type(1):contains("Valid Email") {
+  color: #4caf50;
+}
+
+/* Math Output */
+.remote1-content p:nth-of-type(2),
+.remote1-content p:nth-of-type(3) {
+  font-size: 1rem;
+  color: #ffeb3b;
+  opacity: 0.8;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .remote1-content {
+    max-width: 90%;
+  }
+
+  .remote1-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .remote1-content input {
+    font-size: 0.9rem;
+  }
+}

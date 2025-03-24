@@ -1,0 +1,20 @@
+[
+    {
+      "id": 0,
+      "name": "App 1",
+      "key": "remote1",
+      "externalAppConfig": {
+        "remoteEntry": "http://localhost:3001/mf-manifest.json",
+        "module": "App"
+      }
+    },
+    {
+      "id": 1,
+      "name": "App 2",
+      "key": "remote2",
+      "externalAppConfig": {
+        "remoteEntry": "http://localhost:3002/mf-manifest.json",
+        "module": "App"
+      }
+    }
+  ]
